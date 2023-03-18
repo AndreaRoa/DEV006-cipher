@@ -9,17 +9,20 @@
     <section class="headerImag">
     <img src= "imagenes/venticuatrosiete.jpg">
   </section>
-        <main>
-      <section class="introOne">
-    <img src= "imagenes/intro.jpg">
+        <main class="main-container">
+      <section>
+    <center><img src= "imagenes/intro.jpg" class="introOne"></center>
   </section>
       <section class="introTwo">
       <div>
       <input type="tex" id="message" placeholder="escribe aqui"></input><br>
-      <input type="number" id="displacement" min="1" ></input><br>
-      <p>¿cuanto quieres desplazar para cifrar tu frase?</p><br>
-      <button id="encode">CIFRAR</button>
+      <br>
+      <center>
+      <input type="number" id="displacement" min="1" ></input><br></center>
+      <p class="question">¿cuanto quieres desplazar para cifrar tu frase?</p><br>
+     <center> <button id="encode">CIFRAR</button>
       <button id="decipher">DESCIFRAR</button><br>
+      <button type="boton" onclick="location.reload()" class="botonReseat"></button><br></center>
     </div>
     <div>
        <p id="messageTwo"></p>
