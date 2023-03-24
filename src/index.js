@@ -20,7 +20,8 @@ function cipher(){
    }
    }
 
-document.getElementById("decipher").addEventListener("click",decipher);
+
+   document.getElementById("decipher").addEventListener("click",decipher);
 function decipher(){
    let saveMessage = document.getElementById("message").value;
    let newMessage = "";  
@@ -41,3 +42,15 @@ function decipher(){
          messageTwo.innerHTML = (newMessage);
    }
 }
+
+/*let cerrar =document.querySelectorAll(".close")[0];
+let abrir =document.querySelectorAll(".InformationButton")[0];
+let modal=document.querySelectorAll(".modalClose")[0];
+let modalContainer =document.querySelectorAll(".modalContainer")[0];
+
+abrir.addEventListener("click",function(e){
+   e.preventDefault();
+   modalContainer.style.opacity = "1";
+   modalContainer.style.visibility = "visible";
+   modal.classList.toggle("modalClose");
+}); */

@@ -11,24 +11,29 @@
   </section>
         <main class="main-container">
       <section>
-    <center><img src= "imagenes/intro.jpg" class="introOne"></center>
-  </section>
+    <img src= "imagenes/intro.jpg" class="introOne">
+    </section>
       <section class="introTwo">
       <div>
-      <input type="tex" id="message" placeholder="escribe aqui"></input><br>
-      <br>
-      <center>
-      <input type="number" id="displacement" min="1" ></input><br></center>
-      <p class="question">¿cuanto quieres desplazar para cifrar tu frase?</p><br>
-     <center> <button id="encode">CIFRAR</button>
-      <button id="decipher">DESCIFRAR</button><br>
-      <button type="boton" onclick="location.reload()" class="botonReseat"></button><br></center>
+      <input type="tex" id="message" placeholder="escribe aqui"></input> 
+      </div>
+      <div>
+      <input type="number" id="displacement" min="1" max="27" required ></input>
     </div>
-    <div>
+    <div class="questionOne">
+      <p class="question">¿cuanto quieres desplazar para cifrar tu frase? </p> 
+    </div>
+      <section class="contenedor">
+     <button id="encode">CIFRAR</button>
+      <button id="decipher">DESCIFRAR</button><br>
+      <button onclick="location.reload()" id="botonReseat"></button><br> 
+      </section>
+         <div>
        <p id="messageTwo"></p>
     </div>
   </section>
   </main>
+  
     <script src="index.js" type="module"></script>
   </body>
 </html>

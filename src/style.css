@@ -1,28 +1,24 @@
 .headerImag {
-        width: 100%;
+        width: 110%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .introOne{
-    display:block;
+    display:flex;
     align-items: center;
-    border-radius: 350px;
-    
-    height: 80%;
-    width: 50%;
-    ;
-
-         }
+    justify-content: center;
+    border-radius: 50px;
+    width: 55%;
+     }
 
 body{
     background-image: url(imagenes/introTwo.jpg);
     background-repeat: no-repeat;
     background-size:cover;
     height: 30%;
-   
-}
+   }
 
 .introTwo{
     display: flex;
@@ -31,39 +27,39 @@ body{
     width: max-content;
     width: 80%;
     padding-left: 0%;
-    ;
+    
 }
 
 .main-container {
+    grid-template-columns: repeat(2, 1fr);
     display: grid;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 90%;
     
 }
-.main-container {
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-   
-}
+
 #message {
-       width: 15cm;
-       height: 70px;
+       width: 750px;
+       height: 100px;
        background-color: rgba(0, 0, 0, 0.107);
        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
        color:rgba(0, 0, 0, 0.877);
        text-align: center;
        font-size: medium;
+       margin-bottom: 12px;
     	 }
        
 
 #displacement {
-       width: 12 cm;
+       width: 100px;
        height: 60px;
        background-color: rgba(0, 0, 0, 0.099);
         font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         text-align: center;
-        }
+        display: flex;
+        align-items: center;
+}
 
 .question {
 font-family: cursive;
@@ -83,6 +79,7 @@ box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
     text-align: center;
     width: 15 px;
     height: 45px;
+    margin-right: 12px;
 }
 
 #decipher{
@@ -93,17 +90,28 @@ box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
     font-size: medium;
     width: 15 px;
     height: 45px;
+    margin-right: 16px;    
 }
 
-.botonReseat{
-  background-image: url(imagenes/reset.jpg);
-  position: relative;
-    width: 2.5rem;
-    height: 2.5rem;  
-    ;
+#botonReseat{
+background-image: url(imagenes/reset.png);
+background-size: 60px;
+background-position: center;
+background-repeat: no-repeat;
+width: 50px;
+height: 50px;
+border: none;
+background-color: transparent;
 } 
 
 #messageTwo{
     font-size:larger;
     font-family:cursive;
 }
+
+.contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
