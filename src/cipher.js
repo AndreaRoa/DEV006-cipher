@@ -1,43 +1,50 @@
-const displacement=document.getElementById("displacement").value;
-const messageTwo=document.getElementById("messageTwo");
-function cipher(){
-  const saveMessage=document.getElementById("message").value;
-  let newMessage="";
-  const offset = Number(displacement);
-  for (let i = 0; i<saveMessage.length; i++){
-    const messageAscci = saveMessage.charCodeAt(i);
 
-    if (messageAscci >= 65 && messageAscci <= 90){
-      newMessage += String.fromCharCode(((messageAscci - 65 + offset)  % 26)+ 65);
-    }
-    if(messageAscci >=97 && messageAscci <=122){
-      newMessage += String.fromCharCode(((messageAscci - 97 + offset)  % 26)+ 97);   
-    }
-    if (messageAscci === 32) {
-      newMessage += " ";
-    }
-    messageTwo.innerHTML = (newMessage);
-  }
-}
 
-function decipher(){
-  const saveMessage = document.getElementById("message").value;
-  let newMessage = "";  
-  const offset = Number(displacement.value);
-  for (let i = 0; i<saveMessage.length; i++){
-    const messageAscci = saveMessage.charCodeAt(i);
- 
-    if (messageAscci >= 65 && messageAscci <= 90){
-      newMessage += String.fromCharCode(((messageAscci - 65 - offset)  % 26)+ 65);
+const cipher = {
+  //  decifrar
+  decode: function (offset, message) {
+    let newAscci;
+    let newMessage = "";
+    for (let i = 0; i < message.length; i++) {
+      const menssageAscci = message.charCodeAt(i);
+      if (menssageAscci >= 65 && menssageAscci <= 90) {
+        newAscci = ((menssageAscci - 65 - offset) % 26) + 65;
+        if (newAscci < 65) {
+          newAscci = newAscci + 26;
+        }
+      } else if (menssageAscci >= 97 && menssageAscci <= 122) {
+        newAscci = ((menssageAscci - 97 - offset) % 26) + 97;
+        if (newAscci < 97) {
+          newAscci = newAscci + 26;
+        }
+      } else newAscci = menssageAscci;
+      newMessage += String.fromCharCode(newAscci);
     }
-    if(messageAscci >=97 && messageAscci <=122){
-      newMessage += String.fromCharCode(((messageAscci - 97 - offset)  % 26)+ 97);   
+return newMessage;
+  },
+
+  //cifrar
+  encode: function (offset, message) { //offset numero // message cadena de texto
+    let newAscci;
+    let newMessage = "";
+    for (let i = 0; i < message.length; i++) {
+      const menssageAscci = message.charCodeAt(i);
+      if (menssageAscci >= 65 && menssageAscci <= 90) {
+        newAscci = ((menssageAscci - 65 + offset) % 26) + 65;
+        if (newAscci < 65) {
+          newAscci = newAscci + 26;
+        }
+      } else if (menssageAscci >= 97 && menssageAscci <= 122) {
+        newAscci = ((menssageAscci - 97 + offset) % 26) + 97;
+        if (newAscci < 97) {
+          newAscci = newAscci + 26;
+        }
+      } else newAscci = menssageAscci;
+      newMessage += String.fromCharCode(newAscci);
     }
-    if (messageAscci === 32) {
-      newMessage += " ";
-    }
-    messageTwo.innerHTML = (newMessage);
-  }
-}
- 
-export {cipher,decipher};
+  
+    return newMessage;
+  },
+};
+
+export default cipher;
