@@ -16,6 +16,9 @@ const cipher = {
 
       throw new TypeError("Ingrese el mensaje.");
     }
+    if(offset === 0){
+      throw new TypeError("Ingrese un valor entero");
+    }
     else{
 
       for (let i = 0; i < message.length; i++) {
