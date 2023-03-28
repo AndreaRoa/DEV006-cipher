@@ -12,8 +12,8 @@ Encriptar mensajes atraves de la app que estamos creando para compartirlo por su
 
 Por que se esta facilitando la comunicación entre mujeres en un lenguaje cifrado que solo ellas entenderan
 
-## *Prototipo de alta fidelidad desktop y responsibe mobile*
-<img src="src/altaFIdelidad.jpg" width="500px"    height="300px">
+## *Prototipo de alta fidelidad*
+<img src="altafidelidad.jpg" width="500px"    height="300px">
 
 
 *********
