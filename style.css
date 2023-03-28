@@ -1,0 +1,117 @@
+.headerImag {
+        width: 110%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.introOne{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    width: 55%;
+     }
+
+body{
+    background-image: url(imagenes/introTwo.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 30%;
+   }
+
+.introTwo{
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    width: max-content;
+    width: 80%;
+    padding-left: 0%;
+    
+}
+
+.main-container {
+    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    
+}
+
+#message {
+       width: 750px;
+       height: 100px;
+       background-color: rgba(0, 0, 0, 0.107);
+       font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+       color:rgba(0, 0, 0, 0.877);
+       text-align: center;
+       font-size: medium;
+       margin-bottom: 12px;
+    	 }
+       
+
+#displacement {
+       width: 100px;
+       height: 60px;
+       background-color: rgba(0, 0, 0, 0.099);
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-align: center;
+        display: flex;
+        align-items: center;
+}
+
+.question {
+font-family: cursive;
+font-size:larger;
+text-align: center;
+background-color: rgba(137, 43, 226, 0.322);
+border-radius: 13px;
+box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
+}
+
+#encode{
+    background-color:rgba(240, 163, 137, 0.451);
+    border-style: double;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
+    border-bottom-left-radius: 12px;
+    font-size: medium;
+    text-align: center;
+    width: 15 px;
+    height: 45px;
+    margin-right: 12px;
+}
+
+#decode{
+    background-color:rgba(240, 163, 137, 0.451);
+    border-style: double;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
+    border-bottom-right-radius:  12px;
+    font-size: medium;
+    width: 15 px;
+    height: 45px;
+    margin-right: 16px;    
+}
+
+#botonReseat{
+background-image: url(imagenes/reset.png);
+background-size: 60px;
+background-position: center;
+background-repeat: no-repeat;
+width: 50px;
+height: 50px;
+border: none;
+background-color: transparent;
+} 
+
+#messageTwo{
+    font-size:larger;
+    font-family:cursive;
+}
+
+.contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+

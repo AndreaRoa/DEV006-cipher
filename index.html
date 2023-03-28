@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Mujer fuerte</title>
+    <link rel="stylesheet" href="style.css" />
+     </head>
+  <body>
+    <section class="headerImag">
+    <img src= "imagenes/venticuatrosiete.jpg">
+  </section>
+        <main class="main-container">
+      <section>
+    <img src= "imagenes/intro.jpg" class="introOne">
+    </section>
+      <section class="introTwo">
+      <div>
+      <input type="tex" id="message" placeholder="escribe aqui"/>
+      </div>
+      <div>
+      <input type="number" id="displacement" min="1" max="27" required/>
+    </div>
+    <div class="questionOne">
+      <p class="question">¿cuanto quieres desplazar para cifrar o decifrar tu frase? </p> 
+    </div>
+      <section class="contenedor">
+     <button id="encode">CIFRAR</button>
+      <button id="decode">DESCIFRAR</button><br>
+      <button onclick="location.reload()" id="botonReseat"></button><br> 
+      </section>
+         <div>
+       <p id="messageTwo"></p>
+    </div>
+  </section>
+  </main>
+  
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
