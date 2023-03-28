@@ -5,7 +5,7 @@ const displacement=document.getElementById("displacement");
 const messageTwo=document.getElementById("messageTwo");
 const saveMessage=document.getElementById("message");
 
-function getEncode(){
+/*function getEncode(){
   const messageEncode=cipher.encode(Number(displacement.value),saveMessage.value);
   messageTwo.innerHTML=messageEncode;
 }
@@ -13,8 +13,17 @@ function getEncode(){
 function getDecode(){
   const messageDecode=cipher.decode(Number(displacement.value),saveMessage.value);
   messageTwo.innerHTML=messageDecode;
-}
+}*/
 
 document.getElementById("encode").addEventListener("click",getEncode);
-document.getElementById("decode").addEventListener("click",getDecode);
+function getEncode(){
+  const messageEncode=cipher.encode(Number(displacement.value),saveMessage.value);
+  messageTwo.innerHTML=messageEncode;
+}
 
+
+document.getElementById("decode").addEventListener("click",getDecode);
+function getDecode(){
+  const messageDecode=cipher.decode(Number(displacement.value),saveMessage.value);
+  messageTwo.innerHTML=messageDecode;
+}
