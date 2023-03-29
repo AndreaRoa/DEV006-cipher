@@ -1,39 +1,41 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Mujer fuerte</title>
     <link rel="stylesheet" href="style.css" />
-     </head>
+  </head>
   <body>
     <section class="headerImag">
-    <img src= "imagenes/venticuatrosiete.jpg">
-  </section>
-        <main class="main-container">
-      <section>
-    <img src= "imagenes/intro.jpg" class="introOne">
+      <img src="imagenes/venticuatrosiete.jpg" alt="imagen que tiene el número 24, un slach y un número 7" />
     </section>
-      <section class="introTwo">
-      <div>
-      <input type="tex" id="message" placeholder="escribe aqui"/>
-      </div>
-      <div>
-      <input type="number" id="displacement" min="1" max="27" required/>
-    </div>
-    <div class="questionOne">
-      <p class="question">¿cuanto quieres desplazar para cifrar o decifrar tu frase? </p> 
-    </div>
-      <section class="contenedor">
-     <button id="encode">CIFRAR</button>
-      <button id="decode">DESCIFRAR</button><br>
-      <button onclick="location.reload()" id="botonReseat"></button><br> 
+    <main class="main-container">
+      <section>
+        <img src="imagenes/intro.jpg" class="introOne" alt="imagen donde se encuentra 3 mujeres de fondo , posee una frase: por ella, por ti, por todas."/>
       </section>
-         <div>
-       <p id="messageTwo"></p>
-    </div>
-  </section>
-  </main>
-  
+      <section class="introTwo">
+        <div>
+          <input type="text" id="message" placeholder="escribe aqui" />
+        </div>
+        <div>
+          <input type="number" id="displacement" min="1" max="27" form=required />
+        </div>
+        <div class="questionOne">
+          <p class="question">
+            ¿cuanto quieres desplazar para cifrar o decifrar tu frase?
+          </p>
+        </div>
+        <section class="contenedor">
+          <button id="encode">CIFRAR</button>
+          <button id="decode">DESCIFRAR</button><br />
+          <button onclick="location.reload()" id="botonReseat"></button><br />
+        </section>
+        <div>
+          <p id="messageTwo"></p>
+        </div>
+      </section>
+    </main>
+
     <script src="index.js" type="module"></script>
   </body>
 </html>
