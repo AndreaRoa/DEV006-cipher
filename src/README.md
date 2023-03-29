@@ -13,10 +13,10 @@ Encriptar mensajes atraves de la app que estamos creando para compartirlo por su
 Por que se esta facilitando la comunicación entre mujeres en un lenguaje cifrado que solo ellas entenderan
 
 # PROTOTIPO DE ALTA FIDELIDAD
-<img src="imagenes/prototipo.jpg" width="30%" heigth="500px" align="center">
+<img src="imagenes/prototipo.jpg" width="50%" >
 
 # RESULTADO FINAL
-<img src="imagenes/altafidelidad.jpg" width="30%" heigth="500px" align="center">
+<img src="imagenes/altafidelidad.jpg" width="50%" >
 
 ### HTML y CSS
 
