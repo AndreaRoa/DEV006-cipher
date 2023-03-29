@@ -13,4 +13,4 @@ Encriptar mensajes atraves de la app que estamos creando para compartirlo por su
 Por que se esta facilitando la comunicación entre mujeres en un lenguaje cifrado que solo ellas entenderan
 
 # PROTOTIPO DE BAJA Y ALTA FIDELIDAD
-<img src="prototipo.jpg">
+<img src="imagenes/prototipo.jpg">
