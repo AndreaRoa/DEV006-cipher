@@ -16,7 +16,7 @@ Por que se esta facilitando la comunicación entre mujeres en un lenguaje cifrad
 <img src="imagenes/prototipo.jpg" width="50%" >
 
 # RESULTADO FINAL
-<img src="imagenes/altafidelidad.jpg" width="50%" >
+<img src="altafidelidad.jpg" width="50%" >
 
 ### HTML y CSS
 
